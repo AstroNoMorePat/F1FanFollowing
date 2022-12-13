@@ -16,7 +16,7 @@ Races = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]
 RaceIters = np.linspace(0.0, 22.0, num=Frames)
 Drivers = SocialData['Driver'].values.flatten().tolist()
 
-Drivers = ['Lewis Hamilton','Charles Leclerc','Sebastian Vettel','Sergio Perez','Max Verstappen','Daniel Ricciardo','Pierre Gasly','Valtteri Bottas','Nicholas Latifi']
+#Drivers = ['Lewis Hamilton','Charles Leclerc','Sebastian Vettel','Sergio Perez','Max Verstappen','Daniel Ricciardo','Pierre Gasly','Valtteri Bottas','Nicholas Latifi']
 
 def DriverColor(Name):
     lastname = Name.split(' ')[-1]
@@ -140,4 +140,4 @@ def PlotDate(i):
 #PlotDate(Frames-1)
 
 ani = FuncAnimation(fig=fig, func=PlotDate, frames=Frames, interval=30, blit=False, cache_frame_data=False)
-ani.save('simplified.gif', dpi=150)
+ani.save('full.gif', dpi=150)
